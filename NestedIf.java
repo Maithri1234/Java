@@ -1,11 +1,20 @@
-class NestedIf {
-public static void main(String arfs[]){
-int a=10;
-int b=15;
-if (a==10) {
-if (b==15) {
-System.out.println("Hello java");
+import java.util.*;
+public class NestedIf {
+public static void main( String args[]){
+Scanner sc=new Scanner(System.in);
+System.out.println("enter your favorite iconic character:");
+String act=sc.nextLine();
+if(act.equals("Iron Man")) {
+System.out.println("Great choice");
+System.out.println("enter"+act+"real name");
+String real=sc.nextLine();
+if(real.equalsIgnoreCase("tony stark")) {
+System.out.println("Cool actor");
+}
+} else {
+System.out.println(act);
+}
+sc.close();
 }
 }
-}
-}
+
